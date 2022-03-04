@@ -64,20 +64,33 @@ body {
 }
 
 #left-side {
-    display: flex;
+	display: flex;
+	flex-direction: column;
 	width: clamp(30rem, 45rem, 60rem);
-	background-color: aliceblue;
+}
+
+#left-banner {
+	background-color: black;
+	position: absolute;
+	opacity: 0.5;
 }
 
 #right-side {
     display: flex;
 	flex-direction: column;
+	align-items: center;
 	width: clamp(50rem, 75rem, 100rem);
-	background-color: antiquewhite;
+	background-color: #faf3f3e7;
 }
 
 form {
+	padding: 2rem;
 	display: flex;
-	background-color: aqua;
+	background-color: #c2455a;
+	color: #eceaf5;
 	width: clamp(25rem, 50rem, 75rem);
+}
+
+fieldset {
+	padding: 1rem;
 }
