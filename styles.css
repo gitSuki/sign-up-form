@@ -85,11 +85,11 @@ a {
 
 #left-banner {
 	display: flex;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .3);
 	position: absolute;
 	width: 50rem;
 	bottom: 6rem;
-	opacity: 0.8;
+	opacity: 0.85;
 	transition: 1s;
 }
 
@@ -103,7 +103,7 @@ a {
 }
 
 #text-section {
-	padding-top: 1em;
+	padding-top: 5em;
 	padding-left: 1em;
 	width: 90%;
 }
@@ -119,11 +119,11 @@ form {
 	flex-direction: column;
 	background-color: rgb(35, 35, 35);
 	color: #eceaf5;
-	transition: 2s;
+	transition: 0.75s;
 }
 
 form:hover {
-	background-color: #994251;
+	background-color: #803ca7;
 }
 
 #form-header {
@@ -134,7 +134,7 @@ fieldset {
 	padding: 0.5rem;
 	flex-wrap: wrap;
 	display: flex;
-	width: max(40%, 35rem);
+	width: max(40%, 45rem);
 }
 
 label {
@@ -144,8 +144,15 @@ label {
 
 input {
 	font-size: 1.2rem;
-	border: 1px solid black;
+	background-color: rgb(20, 20, 20);
+	border: 1px solid rgb(80, 80, 80);
 	border-radius: 5px;
+	color: #eceaf5;
+	width: 20rem;
+}
+
+input:focus {
+	outline: solid #994251;
 }
 
 .input-section {
@@ -154,6 +161,38 @@ input {
 	padding: 0.5rem;
 }
 
+#account-button {
+	font-family: inherit;
+	color: #eceaf5;
+	font-weight: 700;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 10px;
+	transition: 0.4s;
+
+	margin-top: 3rem;
+	margin-left: 1rem;
+	background-color: #8e4ab6;
+	padding: 1rem 3rem 1rem 3rem;
+}
+
+#account-button:hover {
+	color: #8e4ab6;
+	background-color: #eceaf5;
+}
+
 .log-in {
-	display: flex;
+	margin-top: 3rem;
+	margin-left: 1rem;
+	text-decoration: none;
+}
+
+a.log-in {
+	font-weight: 700;
+	color: #b35ce6;
+	transition: 0.15s;
+}
+
+a.log-in:hover {
+	color: rgb(233, 203, 250);
 }
