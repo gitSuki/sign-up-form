@@ -54,18 +54,21 @@ table {
     src: url(./resources/Norse-Bold.otf);
 }
 
-/* :root {
-	font-family: norse-bold;
-} */
+:root {
+	font-family: 'Poopins', sans-serif;
+	background-color: darkgray;
+}
 
 body {
     display: flex;
+	font-size: 1.6rem;
+	font-weight: 500;
 }
 
 #left-side {
 	display: flex;
 	flex-direction: column;
-	width: clamp(30rem, 35%, 60rem);
+	width: 60rem;
 }
 
 #left-banner {
@@ -76,8 +79,16 @@ body {
 
 #right-side {
 	padding: 1rem;
-	width: clamp(40rem, 65%, 100rem);
-	background-color: #faf3f3e7;
+}
+
+#text-section {
+	padding-top: 1em;
+	width: 90%;
+}
+
+#invitation-line {
+	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 form {
@@ -88,11 +99,26 @@ form {
 	color: #eceaf5;
 }
 
-fieldset {
+#form-header {
 	padding: 1rem;
+}
+
+fieldset {
+	padding: 0.5rem;
 	flex-wrap: wrap;
 	display: flex;
 	width: max(40%, 35rem);
+}
+
+label {
+	font-size: 0.8rem;
+	padding-bottom: 0.2rem;
+}
+
+input {
+	font-size: 1.2rem;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .input-section {
