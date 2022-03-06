@@ -60,16 +60,20 @@ table {
 
 body {
     display: flex;
+	flex-flow: row wrap;
 	font-size: 1.6rem;
 	font-weight: 500;
 	color: rgb(185, 185, 185);
+	width: 100vw;
+	height: 100vh;
 }
 
 #left-side {
-	background-color: rgb(40, 40, 40);
-	display: flex;
-	flex-direction: column;
-	width: 50rem;
+	flex: 0.5;
+	background: url(./resources/matou_sakura.png);
+	background-position: 50% 0%;
+	width: 40vw;
+	transition: 1s;
 }
 
 #source {
@@ -84,13 +88,15 @@ a {
 }
 
 #left-banner {
-	display: flex;
 	background: rgba(0, 0, 0, .3);
-	position: absolute;
-	width: 50rem;
-	bottom: 6rem;
+	position: relative;
+	height: auto;
+	width: 40vw;
+	top: 52vh;
 	opacity: 0.85;
 	transition: 1s;
+	justify-content: center;
+	align-items: center;
 }
 
 #left-banner:hover {
@@ -98,8 +104,13 @@ a {
 }
 
 #right-side {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
 	background-color: rgb(25, 25, 25);
 	padding: 1rem;
+	width: 60vw;
+	flex: 1;
 }
 
 #text-section {
