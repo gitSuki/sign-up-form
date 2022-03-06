@@ -50,12 +50,12 @@ table {
 /* Custom CSS below */
 
 @font-face {
-    font-family: norse-bold;
-    src: url(./resources/Norse-Bold.otf);
+    font-family: kiona-regular;
+    src: url(./resources/Kiona-Regular.ttf);
 }
 
 :root {
-	font-family: 'Poopins', sans-serif;
+	font-family: kiona-regular, 'Poopins', sans-serif;
 }
 
 body {
@@ -73,17 +73,28 @@ body {
 }
 
 #source {
-	font-size: 1rem;
+	font-size: 0.8rem;
+	color: #ffffff;
 	position: absolute;
 	bottom: 0;
 }
 
+a {
+	color: #ffffff;
+}
+
 #left-banner {
 	display: flex;
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .4);
 	position: absolute;
 	width: 50rem;
-	bottom: 10rem;
+	bottom: 6rem;
+	opacity: 0.8;
+	transition: 1s;
+}
+
+#left-banner:hover {
+	opacity: 1;
 }
 
 #right-side {
@@ -93,6 +104,7 @@ body {
 
 #text-section {
 	padding-top: 1em;
+	padding-left: 1em;
 	width: 90%;
 }
 
@@ -107,6 +119,11 @@ form {
 	flex-direction: column;
 	background-color: rgb(35, 35, 35);
 	color: #eceaf5;
+	transition: 2s;
+}
+
+form:hover {
+	background-color: #994251;
 }
 
 #form-header {
