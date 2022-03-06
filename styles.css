@@ -56,6 +56,7 @@ table {
 
 :root {
 	font-family: kiona-regular, 'Poopins', sans-serif;
+	box-sizing: border-box;
 }
 
 body {
@@ -71,7 +72,7 @@ body {
 #left-side {
 	flex: 0.5;
 	background: url(./resources/matou_sakura.png);
-	background-position: 50% 0%;
+	background-position: 100% 0%;
 	width: 40vw;
 	transition: 1s;
 }
@@ -114,7 +115,6 @@ a {
 }
 
 #text-section {
-	padding-top: 5em;
 	padding-left: 1em;
 	width: 90%;
 }
@@ -125,9 +125,6 @@ a {
 }
 
 form {
-	padding: 1rem;
-	display: flex;
-	flex-direction: column;
 	background-color: rgb(35, 35, 35);
 	color: #eceaf5;
 	transition: 0.75s;
@@ -142,10 +139,10 @@ form:hover {
 }
 
 fieldset {
-	padding: 0.5rem;
-	flex-wrap: wrap;
 	display: flex;
-	width: max(40%, 45rem);
+	flex-flow: row wrap;
+	padding: 1rem;
+	gap: 0.5rem;
 }
 
 label {
@@ -159,7 +156,6 @@ input {
 	border: 1px solid rgb(80, 80, 80);
 	border-radius: 5px;
 	color: #eceaf5;
-	width: 20rem;
 }
 
 input:focus {
@@ -168,8 +164,9 @@ input:focus {
 
 .input-section {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
 	padding: 0.5rem;
+	width: 33%;
 }
 
 #account-button {
@@ -180,6 +177,7 @@ input:focus {
 	border: none;
 	border-radius: 10px;
 	transition: 0.4s;
+	width: 20rem;
 
 	margin-top: 3rem;
 	margin-left: 1rem;
